@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summaries Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>📚 Book Summaries Platform</h1>
+    </header>
+    <main>
+        <section id="add-summary">
+            <h2>Add a Book Summary</h2>
+            <form id="summary-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Biography">Biography</option>
+                    <option value="Science">Science</option>
+                </select>
+
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5" required>
+
+                <label for="summary">Summary:</label>
+                <textarea id="summary" rows="5" required></textarea>
+
+                <button type="submit">Add Summary</button>
+            </form>
+        </section>
+
+        <section id="browse-summaries">
+            <h2>Browse Summaries</h2>
+            <div id="summary-list">
+                <p>No summaries added yet. Start by adding one!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Summaries Platform</p>
+    </footer>
+</body>
+</html>
